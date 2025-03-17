@@ -1,4 +1,3 @@
-import { useState } from "react";
 import NavigationItemsList from "./NavigationItemsList";
 import Logo from "./Logo";
 
@@ -8,16 +7,15 @@ interface Props {
 }
 
 function Navbar({ items, onSelectItem }: Props) {
-  const [selectedIndex, setSelectedIndex] = useState(0);
 
   return (
     <header>
       <nav className="navbar navbar-expand-lg">
         <div className="container mt-3">
-          <Logo onSelectItem={(item) => {onSelectItem(item); setSelectedIndex(0)}} selectedIndex={selectedIndex}/>
+          <Logo onSelectItem={onSelectItem} />
 
           <div className="collapse navbar-collapse" id="navbarNav">
-            <NavigationItemsList items={items} onSelectItem={(item) => {onSelectItem(item); setSelectedIndex(items.indexOf(item))}} selectedIndex={selectedIndex}/>
+            <NavigationItemsList items={items} onSelectItem={onSelectItem} />
           </div>
           <button
             className="navbar-toggler"

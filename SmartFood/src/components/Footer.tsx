@@ -1,4 +1,3 @@
-import { useState } from "react";
 import NavigationItemsList from "./NavigationItemsList";
 
 
@@ -8,14 +7,14 @@ interface Props {
   }
   
   function Footer({ items, onSelectItem }: Props) {
-      const [selectedIndex, setSelectedIndex] = useState(0);
+
     return (
       <footer className="footer py-5">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-0 col-md-1"></div>
             <div className="col-6 col-md-2 mb-3 border-end">
-            <NavigationItemsList items={items} onSelectItem={(item) => {onSelectItem(item); setSelectedIndex(items.indexOf(item))}} selectedIndex={selectedIndex}/>
+            <NavigationItemsList items={items} onSelectItem={onSelectItem} />
             </div>
             <div className="col-6 col-md-2 mb-3"></div>
             <div className="col-0 col-md-1"></div>

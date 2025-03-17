@@ -1,9 +1,8 @@
 
 interface Props {
     onSelectItem: (item: string) => void;
-    selectedIndex: number;
 }
-function Logo({onSelectItem, selectedIndex}: Props) {
+function Logo({onSelectItem}: Props) {
 
   return (
     <span
@@ -11,7 +10,6 @@ function Logo({onSelectItem, selectedIndex}: Props) {
             className="nav-item"
             onClick={() => {
               onSelectItem("Home");
-              selectedIndex = 0;
             }}
           >
             My Portfolio

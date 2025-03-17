@@ -2,19 +2,16 @@
 interface Props {
   items: string[];
   onSelectItem: (item: string) => void;
-  selectedIndex: number;
 }
 
-function NavigationItemsList({ items, onSelectItem, selectedIndex }: Props) {
+function NavigationItemsList({ items, onSelectItem }: Props) {
 
   return (
     <ul className="navbar-nav ms-auto ">
-      {items.map((item, index) => (
+      {items.map((item) => (
         <li
           key={item}
-          className={
-            selectedIndex === index ? "nav-item me-3 active" : "nav-item me-3"
-          }
+          className="nav-item me-3"
           onClick={() => {
             onSelectItem(item);
           }}
