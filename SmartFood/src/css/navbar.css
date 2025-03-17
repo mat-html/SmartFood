@@ -1,0 +1,9 @@
+.nav-item.active {
+    background-color:lightgray;
+    display: flex;
+    align-items: stretch;
+}
+
+.nav-item {
+    cursor: pointer;
+}
