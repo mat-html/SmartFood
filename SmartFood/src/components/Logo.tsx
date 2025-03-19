@@ -12,7 +12,7 @@ function Logo({onSelectItem}: Props) {
               onSelectItem("Home");
             }}
           >
-            My Portfolio
+            SmartFood
     </span>  )
 }
 

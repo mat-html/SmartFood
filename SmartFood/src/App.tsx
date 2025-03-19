@@ -5,34 +5,68 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Menu from "./pages/Menu";
+import Cart from "./pages/Cart";
+import Signup from "./pages/Signup";
+import Login from "./pages/Login";
+import Reserve from "./pages/Reserve";
 
-let items = ["Home", "Menu", "About", "Contact"];
+let navbarItems = [
+  "Home",
+  "Menu",
+  "About",
+  "Reserve",
+  "Cart",
+  "Sign Up",
+  "Login"
+];
 
+let footerItems = [
+  "Contact",
+  "Hilfe",
+  "Impressum",
+];
 
 function App() {
   const [activePage, setActivePage] = useState("Home");
-  
+
   const renderPage = () => {
     switch (activePage.toLowerCase()) {
       case "home":
         return <Home />;
-        
+
       case "menu":
         return <Menu />;
-        
+
       case "about":
         return <About />;
-        
+
       case "contact":
         return <Contact />;
+
+      case "cart":
+        return <Cart />;
+
+      case "menu":
+        return <Menu />;
+
+      case "sign up":
+        return <Signup />;
+
+      case "login":
+        return <Login />;
+
+      case "reserve":
+        return <Reserve />;
+
       default:
         return <Home />;
-  }}
+    }
+  };
   return (
     <>
-      <Navbar items={items} onSelectItem={setActivePage} />
+      <Navbar items={navbarItems} onSelectItem={setActivePage} />
       {renderPage()}
-      <Footer items={items} onSelectItem={setActivePage} />
+      <Footer items={footerItems} onSelectItem={setActivePage} />
     </>
   );
 }
