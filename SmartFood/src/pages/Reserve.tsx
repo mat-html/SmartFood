@@ -46,6 +46,9 @@ function Reserve() {
         <option value="option13">13 people</option>
       </select>
     </div>
+     <div>
+      <button>Submit</button>
+    </div>
   </form>
   );
 }
