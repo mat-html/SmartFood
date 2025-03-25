@@ -46,9 +46,6 @@ function App() {
       case "cart":
         return <Cart />;
 
-      case "menu":
-        return <Menu />;
-
       case "sign up":
         return <Signup />;
 
