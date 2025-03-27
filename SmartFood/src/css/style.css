@@ -1,7 +1,10 @@
 @import url("./navbar.css");
+@import url("./login.css");
+@import url("./menu.css");
+@import url("footer.css");
 
-body main{
-    min-height: 100vw;
-    max-width: 80%;
-    margin-left: 10%;
+body main {
+  min-height: 100vw;
+  max-width: 80%;
+  margin-left: 10%;
 }
