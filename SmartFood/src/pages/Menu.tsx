@@ -6,13 +6,13 @@ function Menu() {
   return (
     <main>
       <h1>Menu</h1>
-        <ul className="d-flex">
-          {menuItems.map((item, index) => (
-            <li key={index}>
-              <MenuItem name={item.name} imageUrl={item.imageUrl}/>
-            </li>
-          ))}
-        </ul>
+      <ul className="d-flex">
+        {menuItems.map((item, index) => (
+          <li key={index}>
+            <MenuItem name={item.name} imageUrl={item.imageUrl} />
+          </li>
+        ))}
+      </ul>
     </main>
   );
 }

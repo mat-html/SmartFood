@@ -1,8 +1,8 @@
 import "../css/menu-item.css"
 
 type MenuItemProps = {
-    name: string;
-    imageUrl: string;
+  name: string;
+  imageUrl: string;
 };
 
 function MenuItem ({ name, imageUrl }: MenuItemProps) {
