@@ -13,7 +13,7 @@ function Impressum() {
       </p>
       <h2>Kontakt</h2>
       <p>
-        E-mail: <a href="smartfood@gmail.com">smartfood@gmail.com</a> <br />
+        E-mail: <a href="info@smart-food.at">info@smart-food.at</a> <br />
         Tel: +43 123 456 <br />
         DVR: 4010080 <br />
         UID NR: ATU67710658 <br />

@@ -25,7 +25,7 @@ function Footer({ items, onSelectItem }: Props) {
                 <b>Telefon:</b> +43 1 234 567 891
               </li>
               <li>
-                <b>Adresse:</b> SmartFood, Musterstraße 24, A-1010 Wien,
+                <b>Adresse:</b> SmartFood, Kärnter Straße 123, A-1010 Wien,
                 Österreich
               </li>
               <li>

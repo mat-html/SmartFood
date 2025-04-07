@@ -7,7 +7,6 @@ interface Props {
 }
 
 function Navbar({ items, onSelectItem }: Props) {
-
   return (
     <header>
       <nav className="navbar navbar-expand-lg">
@@ -30,6 +29,7 @@ function Navbar({ items, onSelectItem }: Props) {
           </button>
         </div>
       </nav>
+      <div className="border-bottom mb-3 mt-2"></div>
     </header>
   );
 }
