@@ -1,8 +1,7 @@
-import "../css/menu.css"
 import MenuItem from "../components/MenuItem";
 
 function Menu() {
-  const menuItems = [{name: "Pizza", imageUrl: "/img/pizza.jpg"}, {name: "Burger", imageUrl: "/img/burger.jpg"}];
+  const menuItems = [{name: "Pizza", imageUrl: "/img/pizza.png"}, {name: "Burger", imageUrl: "/img/burger.png"}];
 
   return (
     <main>
