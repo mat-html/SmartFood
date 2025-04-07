@@ -1,9 +1,21 @@
+.nav {
+  border-bottom: 2px solid white;
+}
+
 .nav-item.active {
-    background-color:lightgray;
-    display: flex;
-    align-items: stretch;
+  display: flex;
+  align-items: stretch;
 }
 
 .nav-item {
-    cursor: pointer;
+  cursor: pointer;
+}
+
+.nav-link {
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.nav-link:hover {
+  color: rgb(255, 115, 0);
 }

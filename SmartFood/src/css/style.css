@@ -3,6 +3,11 @@
 @import url("./menu.css");
 @import url("./footer.css");
 
+body {
+  background-color: #1a1a1a;
+  color: white;
+}
+
 body main {
   min-height: 40vw;
   max-width: 80%;
