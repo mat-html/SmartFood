@@ -1,12 +1,16 @@
+import "../css/cart.css";
+
 function Cart() {
   return (
     <main>
       <h1>Cart</h1>
-      <div className="row g-5">
-        <div className="col-md-5 col-lg-4 order-md-last">
+      <div className="row justify-content-center">
+        <div className="col-md-12 col-lg-8">
           <h4 className="d-flex justify-content-between align-items-center mb-3">
-            <span className="text-primary">Your cart</span>
-            <span className="badge bg-primary rounded-pill">3</span>
+            <span className="textCart">Your cart</span>
+            <span className="badge rounded-pill" id="numOfItems">
+              3
+            </span>
           </h4>
           <ul className="list-group mb-3">
             <li className="list-group-item d-flex justify-content-between lh-sm">
@@ -35,6 +39,7 @@ function Cart() {
               <strong>$20</strong>
             </li>
           </ul>
+          <button id="orderBtn">Order now</button>
         </div>
       </div>
     </main>
