@@ -9,6 +9,8 @@ import Cart from "./pages/Cart";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import Reserve from "./pages/Reserve";
+import Hilfe from "./pages/Hilfe";
+import Impressum from "./pages/Impressum";
 
 let navbarItems = [
   "Home",
@@ -17,14 +19,10 @@ let navbarItems = [
   "Reserve",
   "Cart",
   "Sign Up",
-  "Login"
+  "Login",
 ];
 
-let footerItems = [
-  "Contact",
-  "Hilfe",
-  "Impressum",
-];
+let footerItems = ["Contact", "Hilfe", "Impressum"];
 
 function App() {
   const [activePage, setActivePage] = useState("Home");
@@ -54,6 +52,12 @@ function App() {
 
       case "reserve":
         return <Reserve />;
+
+      case "hilfe":
+        return <Hilfe />;
+
+      case "impressum":
+        return <Impressum />;
 
       default:
         return <Home />;
