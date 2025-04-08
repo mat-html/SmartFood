@@ -23,7 +23,7 @@ form {
   width: 361px;
 }
 
-button {
+#loginBtn {
   width: 100%;
   padding: 12px;
   font-size: 1rem;
@@ -35,6 +35,6 @@ button {
   transition: background-color 0.3s;
 }
 
-button:hover {
+#loginBtn:hover {
   background-color: #2980b9;
 }
