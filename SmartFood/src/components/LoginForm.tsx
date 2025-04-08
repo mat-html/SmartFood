@@ -42,6 +42,7 @@ function LoginForm() {
           data-mdb-button-init
           data-mdb-ripple-init
           className="btn btn-primary btn-block mb-4"
+          id="loginBtn"
         >
           Sign in
         </button>
