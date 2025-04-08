@@ -1,4 +1,4 @@
-import "../css/menu-item.css"
+import "../css/menu-item.css";
 
 type MenuItemProps = {
   name: string;
