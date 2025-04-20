@@ -1,3 +1,5 @@
+import "../css/forms.css";
+
 function LoginForm() {
   return (
     <div className="d-flex justify-content-center">
@@ -41,7 +43,7 @@ function LoginForm() {
           type="submit"
           data-mdb-button-init
           data-mdb-ripple-init
-          className="btn btn-primary btn-block mb-4"
+          className="form-btn btn btn-block mb-4"
           id="loginBtn"
         >
           Sign in

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../css/forms.css";
 
 function SignupForm() {
   const [formData, setFormData] = useState({
@@ -41,7 +42,7 @@ function SignupForm() {
     <div className="d-flex justify-content-center">
       <form onSubmit={handleSubmit}>
         <div className="form-group mb-2">
-          <label>First name:</label>
+          <label className="form-label">First name:</label>
           <input
             className="form-control"
             name="firstName"
@@ -50,7 +51,7 @@ function SignupForm() {
           />
         </div>
         <div className="form-group mb-2">
-          <label>Last name:</label>
+          <label className="form-label">Last name:</label>
           <input
             className="form-control"
             name="lastName"
@@ -59,7 +60,7 @@ function SignupForm() {
           />
         </div>
         <div className="form-group mb-2">
-          <label>Email address:</label>
+          <label className="form-label">Email address:</label>
           <input
             className="form-control"
             type="email"
@@ -69,7 +70,7 @@ function SignupForm() {
           />
         </div>
         <div className="form-group mb-2">
-          <label>Password:</label>
+          <label className="form-label">Password:</label>
           <input
             className="form-control"
             type="password"
@@ -79,7 +80,7 @@ function SignupForm() {
           />
         </div>
         <div className="form-group mb-2">
-          <label>Repeat password:</label>
+          <label className="form-label">Repeat password:</label>
           <input
             className="form-control"
             type="password"
@@ -92,7 +93,7 @@ function SignupForm() {
           type="submit"
           data-mdb-button-init
           data-mdb-ripple-init
-          className="btn btn-primary btn-block mb-4"
+          className="form-btn btn btn-block mb-4"
         >
           Sign up
         </button>
