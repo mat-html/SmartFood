@@ -2,17 +2,16 @@ import NavigationItemsList from "./NavigationItemsList";
 
 interface Props {
   items: string[];
-  onSelectItem: (item: string) => void;
 }
 
-function Footer({ items, onSelectItem }: Props) {
+function Footer({ items }: Props) {
   return (
     <footer className="footer py-5">
       <div className="container">
         <div className="row align-items-center">
           <div className="col-0 col-md-1"></div>
           <div className="col-6 col-md-2 mb-3 border-end">
-            <NavigationItemsList items={items} onSelectItem={onSelectItem} />
+            <NavigationItemsList items={items} />
           </div>
           <div className="col-0 col-md-1"></div>
           <div className="col-md-5 offset-md-1 mb-3 align-center">

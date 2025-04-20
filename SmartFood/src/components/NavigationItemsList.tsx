@@ -1,20 +1,26 @@
+import { NavLink } from "react-router-dom";
+
 interface Props {
   items: string[];
-  onSelectItem: (item: string) => void;
 }
 
-function NavigationItemsList({ items, onSelectItem }: Props) {
+function NavigationItemsList({ items }: Props) {
+  const getActiveStyle = ({ isActive }: { isActive: boolean }) => {
+    return {
+      color: isActive ? "orange" : "white",
+    };
+  };
   return (
     <ul className="navbar-nav ms-auto">
       {items.map((item) => (
-        <li
-          key={item}
-          className="nav-item me-3"
-          onClick={() => {
-            onSelectItem(item);
-          }}
-        >
-          <span className="nav-link">{item}</span>
+        <li key={item} className="nav-item me-3">
+          <NavLink
+            to={`/${item.toLowerCase()}`}
+            className="nav-link"
+            style={getActiveStyle}
+          >
+            {item}
+          </NavLink>
         </li>
       ))}
     </ul>
