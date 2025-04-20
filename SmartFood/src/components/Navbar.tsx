@@ -3,18 +3,17 @@ import Logo from "./Logo";
 
 interface Props {
   items: string[];
-  onSelectItem: (item: string) => void;
 }
 
-function Navbar({ items, onSelectItem }: Props) {
+function Navbar({ items }: Props) {
   return (
     <header>
       <nav className="navbar navbar-expand-lg">
         <div className="container mt-3">
-          <Logo onSelectItem={onSelectItem} />
+          <Logo />
 
           <div className="collapse navbar-collapse" id="navbarNav">
-            <NavigationItemsList items={items} onSelectItem={onSelectItem} />
+            <NavigationItemsList items={items} />
           </div>
           <button
             className="navbar-toggler"

@@ -1,20 +1,12 @@
+import { Link } from "react-router-dom";
 import "../css/logo.css";
 
-interface Props {
-  onSelectItem: (item: string) => void;
-}
-function Logo({ onSelectItem }: Props) {
+function Logo() {
   return (
-    <span
-      key={"Home"}
-      className="nav-item"
-      id="logo"
-      onClick={() => {
-        onSelectItem("Home");
-      }}
-    >
-      <span id="logoOrange">Smart</span>Food
-    </span>
+    <Link to="/home" className="nav-item" id="logo">
+      <span id="logoOrange">Smart</span>
+      <span id="logoWhite">Food</span>
+    </Link>
   );
 }
 
