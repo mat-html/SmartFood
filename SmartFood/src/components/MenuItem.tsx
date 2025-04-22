@@ -14,7 +14,13 @@ function MenuItem ({ name, imageUrl }: MenuItemProps) {
                     <image href={imageUrl} width="100%" height="100%" />
                 </svg>
                 <div className="card-body">
-                    <p className="text-center">{name}</p>
+                    <div className="d-flex flex-row">
+                        <p className="text-center">{name}</p>
+                    </div>
+                    <div className="d-flex flex-row justify-content-between">
+                        <p className="mr-auto">10 €</p>
+                        <button>🛒</button>
+                    </div>
                 </div>
             </div>
         </div>
