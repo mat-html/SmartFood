@@ -1,5 +1,14 @@
+#cart h1 {
+  margin: 1em;
+  text-align: center;
+}
+.cartContent {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
 #orderBtn {
-  width: 100%;
+  width: 60%;
   padding: 12px;
   font-size: 1rem;
   border-radius: 4px;
@@ -16,4 +25,26 @@
 
 .textCart {
   color: rgb(255, 115, 0);
+}
+
+#cartItemName {
+  color: rgb(255, 115, 0);
+}
+
+#cartItemPrice {
+  color: #fff;
+}
+
+#cartList {
+  background-color: #fff;
+  border-radius: 1em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.cartListItem {
+  background-color: #1a1a1a;
+  margin: 1em 2em;
+  border-radius: 2em;
+  overflow: hidden;
 }
