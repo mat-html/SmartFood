@@ -1,0 +1,50 @@
+#cart h1 {
+  margin: 1em;
+  text-align: center;
+}
+.cartContent {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+#orderBtn {
+  width: 60%;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  background-color: rgb(255, 115, 0);
+}
+
+#numOfItems {
+  background-color: rgb(255, 115, 0);
+}
+
+.textCart {
+  color: rgb(255, 115, 0);
+}
+
+#cartItemName {
+  color: rgb(255, 115, 0);
+}
+
+#cartItemPrice {
+  color: #fff;
+}
+
+#cartList {
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 1em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.cartListItem {
+  background-color: #1a1a1a;
+  margin: 1em 2em;
+  border-radius: 2em;
+  overflow: hidden;
+}
