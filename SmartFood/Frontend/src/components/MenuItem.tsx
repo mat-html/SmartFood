@@ -1,6 +1,6 @@
 import "../css/menu-item.css";
 
-type MenuItemProps = {
+export type MenuItemProps = {
   name: string;
   imageUrl: string;
   price: string;
