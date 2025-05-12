@@ -1,8 +1,8 @@
-const pool = require("../db");
+import pool from "../config/db.js";
 
-exports.getReservations = async (req, res) => {
+export const getReservations = async (req, res) => {
   try {
-    const result = await pool.query("SELECT * FROM reservations");
+    const result = await pool.query("SELECT * FROM tableorder");
     res.json(result.rows);
   } catch (err) {
     console.error(err);

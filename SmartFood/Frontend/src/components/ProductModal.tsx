@@ -24,7 +24,7 @@ const ProductModal: React.FC<ProductModalProps> = ({ product, onClose }) => {
           width="18vw"
           height="18vw"
         >
-          <image href={product.imageUrl} width="100%" height="100%" />
+          <image href={product.imageurl} width="100%" height="100%" />
         </svg>
         <h3 style={styles.textStyle}>{product.name}</h3>
         <p style={styles.textStyle}>Price: ${product.price}</p>

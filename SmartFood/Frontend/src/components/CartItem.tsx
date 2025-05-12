@@ -1,9 +1,9 @@
 type CartItemProps = {
   name: string;
-  imageUrl: string;
+  imageurl: string;
   price: string;
 };
-function CartItem({ name, imageUrl, price }: CartItemProps) {
+function CartItem({ name, imageurl, price }: CartItemProps) {
   return (
     <div className="col m-2">
       <div className=" shadow-sm d-flex cartListItem">
@@ -18,7 +18,7 @@ function CartItem({ name, imageUrl, price }: CartItemProps) {
             width="18vw"
             height="18vw"
           >
-            <image href={imageUrl} width="100%" height="100%" />
+            <image href={imageurl} width="100%" height="100%" />
           </svg>
         </div>
         <div className="card-body d-flex justify-content-between align-items-center">

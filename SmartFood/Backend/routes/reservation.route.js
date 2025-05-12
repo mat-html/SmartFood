@@ -1,7 +1,8 @@
-const express = require("express");
-const router = express.Router();
-const reservationController = require("../controllers/reservationController");
+import { Router } from "express";
+import { getReservations } from "../controllers/reservation.controller.js";
 
-router.get("/", userController.getReservations);
+const router = Router();
 
-module.exports = router;
+router.get("/", getReservations);
+
+export default router;

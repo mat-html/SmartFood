@@ -2,11 +2,11 @@ import Image from "../components/Image";
 
 function About() {
   const creatorImages = [
-    { name: "Barnabás Mátrai", imageUrl: "/img/creators/Matrai_Barnabas.png", alt: "Barnabas_Matrai" },
-    { name: "Barnabás Mátrai", imageUrl: "/img/creators/Matrai_Barnabas.png", alt: "Barnabas_Matrai" },
-    { name: "Barnabás Mátrai", imageUrl: "/img/creators/Matrai_Barnabas.png", alt: "Barnabas_Matrai" },
-    { name: "Barnabás Mátrai", imageUrl: "/img/creators/Matrai_Barnabas.png", alt: "Barnabas_Matrai" },
-    { name: "Barnabás Mátrai", imageUrl: "/img/creators/Matrai_Barnabas.png", alt: "Barnabas_Matrai" }
+    { name: "Barnabás Mátrai", imageurl: "/img/creators/Matrai_Barnabas.png", alt: "Barnabas_Matrai" },
+    { name: "Barnabás Mátrai", imageurl: "/img/creators/Matrai_Barnabas.png", alt: "Barnabas_Matrai" },
+    { name: "Barnabás Mátrai", imageurl: "/img/creators/Matrai_Barnabas.png", alt: "Barnabas_Matrai" },
+    { name: "Barnabás Mátrai", imageurl: "/img/creators/Matrai_Barnabas.png", alt: "Barnabas_Matrai" },
+    { name: "Barnabás Mátrai", imageurl: "/img/creators/Matrai_Barnabas.png", alt: "Barnabas_Matrai" }
   ];
 
   return (
@@ -33,7 +33,7 @@ function About() {
       </div>
       <div className="d-flex align-items-center">
         {creatorImages.map((image) => (
-          <Image name={image.name} imageUrl={image.imageUrl} alt={image.alt}/>
+          <Image name={image.name} imageurl={image.imageurl} alt={image.alt}/>
         ))}
       </div>
     </main>

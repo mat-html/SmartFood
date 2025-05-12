@@ -1,11 +1,12 @@
-const { Pool } = require("pg");
+import pkg from "pg";
+const { Pool } = pkg;
 
 const pool = new Pool({
-  user: "your_pg_username",
+  user: "postgres",
   host: "localhost",
-  database: "your_db_name",
-  password: "your_pg_password",
+  database: "smartfood",
+  password: "password",
   port: 5432,
 });
 
-module.exports = pool;
+export default pool;

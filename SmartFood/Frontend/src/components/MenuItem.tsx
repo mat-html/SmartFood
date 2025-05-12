@@ -2,7 +2,7 @@ import "../css/menu-item.css";
 
 export type Product = {
   name: string;
-  imageUrl: string;
+  imageurl: string;
   price: string;
 };
 
@@ -10,9 +10,9 @@ type MenuItemProps = Product & {
   onProductClick: (product: Product) => void;
 };
 
-function MenuItem({ name, imageUrl, price, onProductClick }: MenuItemProps) {
+function MenuItem({ name, imageurl, price, onProductClick }: MenuItemProps) {
   const handleClick = () => {
-    onProductClick({ name, imageUrl, price });
+    onProductClick({ name, imageurl, price });
   };
 
   return (
@@ -30,7 +30,7 @@ function MenuItem({ name, imageUrl, price, onProductClick }: MenuItemProps) {
           onClick={handleClick} // 👈 click only here
           style={{ cursor: "pointer" }} // optional: visual feedback
         >
-          <image href={imageUrl} width="100%" height="100%" />
+          <image href={imageurl} width="100%" height="100%" />
         </svg>
         <div className="card-body">
           <p className="text-center">{name}</p>

@@ -1,8 +1,8 @@
-const pool = require("../db");
+import pool from "../config/db.js";
 
-exports.getProducts = async (req, res) => {
+export const getProducts = async (req, res) => {
   try {
-    const result = await pool.query("SELECT * FROM products");
+    const result = await pool.query("SELECT * FROM product");
     res.json(result.rows);
   } catch (err) {
     console.error(err);

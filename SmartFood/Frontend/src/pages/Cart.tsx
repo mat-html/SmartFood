@@ -3,13 +3,13 @@ import "../css/cart.css";
 
 function Cart() {
   const menuItems = [
-    { name: "Pizza", imageUrl: "/img/pizza.png", price: "12.99" },
+    { name: "Pizza", imageurl: "/img/pizza.png", price: "12.99" },
     {
       name: "Fish and chips",
-      imageUrl: "/img/fish-and-chips.png",
+      imageurl: "/img/fish-and-chips.png",
       price: "14.99",
     },
-    { name: "Lasagna", imageUrl: "/img/lasagna.png", price: "13.99" },
+    { name: "Lasagna", imageurl: "/img/lasagna.png", price: "13.99" },
   ];
   return (
     <div id="cart" className="container">
@@ -28,7 +28,7 @@ function Cart() {
                 <li key={index}>
                   <CartItem
                     name={item.name}
-                    imageUrl={item.imageUrl}
+                    imageurl={item.imageurl}
                     price={item.price}
                   />
                 </li>
