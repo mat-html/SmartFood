@@ -1,8 +1,8 @@
 import React from 'react';
-import type { MenuItemProps } from './MenuItem';
+import type { Product } from './MenuItem';
 
 interface ProductModalProps {
-  product: MenuItemProps;
+  product: Product;
   onClose: () => void;
 }
 

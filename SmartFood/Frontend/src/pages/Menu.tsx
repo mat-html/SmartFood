@@ -1,10 +1,9 @@
-import { useState } from 'react';
-import MenuItem from "../components/MenuItem";
-import type { MenuItemProps } from "../components/MenuItem";
-import ProductModal from '../components/ProductModal';
+import { useState } from "react";
+import MenuItem, { Product } from "../components/MenuItem";
+import ProductModal from "../components/ProductModal";
 
 function Menu() {
-  const [selectedProduct, setSelectedProduct] = useState<MenuItemProps | null>(null);
+  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
 
   const menuItems = [
     { name: "Pizza", imageUrl: "/img/pizza.png", price: "11.90" },
@@ -16,7 +15,7 @@ function Menu() {
     { name: "Spaghetti", imageUrl: "/img/spaghetti.png", price: "13.90" },
   ];
 
-  const handleItemClick = (item: MenuItemProps) => {
+  const handleItemClick = (item: Product) => {
     setSelectedProduct(item);
   };
 
@@ -29,11 +28,12 @@ function Menu() {
       <h1>Menu</h1>
       <ul className="d-flex flex-wrap">
         {menuItems.map((item, index) => (
-          <li key={index} onClick={() => handleItemClick(item)}>
+          <li key={index}>
             <MenuItem
               name={item.name}
               imageUrl={item.imageUrl}
               price={item.price}
+              onProductClick={handleItemClick}
             />
           </li>
         ))}
