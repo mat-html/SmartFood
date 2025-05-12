@@ -1,12 +1,20 @@
 import "../css/menu-item.css";
 
-type MenuItemProps = {
+export type Product = {
   name: string;
   imageUrl: string;
   price: string;
 };
 
-function MenuItem({ name, imageUrl, price }: MenuItemProps) {
+type MenuItemProps = Product & {
+  onProductClick: (product: Product) => void;
+};
+
+function MenuItem({ name, imageUrl, price, onProductClick }: MenuItemProps) {
+  const handleClick = () => {
+    onProductClick({ name, imageUrl, price });
+  };
+
   return (
     <div className="col m-2">
       <div className="card shadow-sm">
@@ -19,6 +27,8 @@ function MenuItem({ name, imageUrl, price }: MenuItemProps) {
           preserveAspectRatio="xMidYMid slice"
           width="18vw"
           height="18vw"
+          onClick={handleClick} // 👈 click only here
+          style={{ cursor: "pointer" }} // optional: visual feedback
         >
           <image href={imageUrl} width="100%" height="100%" />
         </svg>
